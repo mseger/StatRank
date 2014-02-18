@@ -1,0 +1,8 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+
+  form.navbar-form.pull-right(name="fb-login", action="/login", method="post")
+    input.btn(type="submit", value="Login with Facebook")

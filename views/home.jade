@@ -1,0 +1,21 @@
+extends layout
+
+block content
+    title= title
+
+    div.row.container-narrow
+
+        div.span7.well(id="my-groups", style="margin-top: 30px")
+                h3 My FB Friends
+                if friends.length == 0
+                    h4 No friends were found yet. Connect with FB to import your friends!
+                each friend, j in friends
+                    div.well(style="background-color: #CFCFCF")
+                        div.well
+                            div.row
+                                div.span3
+                                    h4 #{friend.name}
+
+
+
+
